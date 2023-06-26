@@ -14,7 +14,6 @@ import { Archivio } from '../../archivio';
 export class RisultatoLibriComponent implements OnInit {
   @Input() numeroLibri: number;
   constructor() { }
-
   ngOnInit() {
   }
 

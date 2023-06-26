@@ -1,6 +1,5 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
-import { ArchivioService } from './archivio.service';
 import { InserimentoComponent } from './inserimento/inserimento.component';
 import { RicercaComponent } from './ricerca/ricerca.component';
 
@@ -12,15 +11,14 @@ import { RicercaComponent } from './ricerca/ricerca.component';
   imports: [InserimentoComponent, RicercaComponent, CommonModule],
 })
 export class RootComponent implements OnInit {
-  title: string ="Byblos";
-  selezione:string= 'home';
+  title: string = "Byblos";
+  selezione: string = 'home';
 
   /* metodo per cambiare la visualizzazione della pagina principale */
   cambioView(name:string){
     this.selezione=name;
   }
-  
-  constructor() {}
 
+  constructor() {}
   ngOnInit() {}
 }

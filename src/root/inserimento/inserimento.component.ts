@@ -18,8 +18,7 @@ export class InserimentoComponent implements OnInit {
   @Output() newViewEvent = new EventEmitter<string>();
   notifica: string;
   
-  constructor(private as: ArchivioService) {}
-  ngOnInit() {}
+ 
 
   /* metodo invocato sul pulsante 'chiudi' per tornare alla home e per nascondere la notifica di avvenuto inserimento */
   chiudi() {
@@ -65,4 +64,8 @@ export class InserimentoComponent implements OnInit {
     inputAutore.value = '';
     inputPosizione.value = '';
   }
+
+  constructor(private as: ArchivioService) {}
+  ngOnInit() {}
+
 }

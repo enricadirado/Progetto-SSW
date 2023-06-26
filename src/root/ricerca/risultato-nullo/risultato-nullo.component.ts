@@ -11,8 +11,6 @@ import { Component, OnInit , Input} from '@angular/core';
 export class RisultatoNulloComponent implements OnInit {
   @Input() numeroLibri: number;
   constructor() { }
-
   ngOnInit() {
   }
-
 }

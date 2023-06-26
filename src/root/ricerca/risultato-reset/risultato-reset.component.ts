@@ -13,5 +13,4 @@ export class RisultatoResetComponent implements OnInit {
   constructor() { }
   ngOnInit() {
   }
-
 }
