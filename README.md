@@ -7,4 +7,4 @@ Il progetto riguarda la realizzazione di una applicazione in Angular che vada a 
 
 [Edit on StackBlitz ⚡️](https://stackblitz.com/edit/stackblitz-starters-kaujhx)
 
-[View the project]()
+[View the project](https://stackblitz-starters-kaujhx.stackblitz.io)
