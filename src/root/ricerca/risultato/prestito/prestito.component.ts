@@ -19,7 +19,6 @@ export class PrestitoComponent implements OnInit {
     var input: HTMLInputElement = document.getElementById("nominativoInput") as HTMLInputElement;
     var nome = input.value;
     this.libroTrovato.nominativo=nome;
-    console.log('nominativo', this.libroTrovato.nominativo);
     this.as.getData().subscribe({
       next: (x: AjaxResponse<any>) => {
         let archivio1: Archivio= new Archivio(JSON.parse(x.response));
