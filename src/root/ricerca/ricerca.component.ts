@@ -41,8 +41,6 @@ export class RicercaComponent implements OnInit {
         this.archivioFinal = archivioStart.archivio.filter((el) =>
           (el.titolo + el.autore).toLowerCase().includes(y)
         );
-        console.log(archivioStart, Array.isArray(archivioStart)); /***/
-        console.log(this.archivioFinal, Array.isArray(this.archivioFinal) ); /***/
         if (y.length>0 && y!='') {
           if (this.archivioFinal.length === 1) {
             this.libroTrovato = this.archivioFinal[0];
