@@ -17,6 +17,7 @@ export class RisultatoComponent implements OnInit {
   @Input() libroTrovato: Libro;
   @Output() removeDocEvent = new EventEmitter<void>();
   
+  /* metodo per invocare la funzione di ricerca nel componente 'ricerca' */
   removeDoc() {
     this.removeDocEvent.emit();
   }

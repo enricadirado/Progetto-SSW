@@ -18,8 +18,6 @@ export class InserimentoComponent implements OnInit {
   @Output() newViewEvent = new EventEmitter<string>();
   notifica: string;
   
- 
-
   /* metodo invocato sul pulsante 'chiudi' per tornare alla home e per nascondere la notifica di avvenuto inserimento */
   chiudi() {
     this.newViewEvent.emit('home');

@@ -11,7 +11,6 @@ import { Component, Input, OnInit } from '@angular/core';
 export class NotificaComponent implements OnInit {
   @Input() notifica: string;
   constructor() { }
-
   ngOnInit() {
   }
 

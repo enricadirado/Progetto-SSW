@@ -7,6 +7,3 @@
 <app-prestito *ngIf="libroTrovato.nominativo == 'undefined'" [libroTrovato]="libroTrovato"></app-prestito>
 <app-restituzione *ngIf="libroTrovato.nominativo !== 'undefined'" [libroTrovato]="libroTrovato"></app-restituzione>
 <app-rimozione *ngIf="libroTrovato.nominativo == 'undefined'" [libroTrovato]="libroTrovato" (rimuoviDocEvent)="removeDoc()"></app-rimozione>
-
-<div>
-</div>
