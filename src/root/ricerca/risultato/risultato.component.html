@@ -1,0 +1,12 @@
+<div id="libroRis" >
+  <p>{{ libroTrovato.titolo }}</p>
+  <p>{{ libroTrovato.autore }}</p>
+  <p>{{ libroTrovato.posizione }}</p>
+</div>
+<br/>
+<app-prestito *ngIf="libroTrovato.nominativo == 'undefined'" [libroTrovato]="libroTrovato"></app-prestito>
+<app-restituzione *ngIf="libroTrovato.nominativo !== 'undefined'" [libroTrovato]="libroTrovato"></app-restituzione>
+<app-rimozione *ngIf="libroTrovato.nominativo == 'undefined'" [libroTrovato]="libroTrovato" (rimuoviDocEvent)="removeDoc()"></app-rimozione>
+
+<div>
+</div>

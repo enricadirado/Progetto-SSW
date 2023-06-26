@@ -1,0 +1,12 @@
+#mainPage{
+  text-align: center;
+}
+
+h1{
+  letter-spacing: 2px;
+}
+
+#insButton:hover{
+  background-color:rgb(226, 227, 192);
+  cursor: pointer;
+}

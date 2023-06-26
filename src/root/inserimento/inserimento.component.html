@@ -1,0 +1,21 @@
+<div *ngIf="selezione == 'insert'">
+  <h1>Inserimento di un volume</h1>
+  <input type="text" placeholder="Titolo" id="titolo"/>
+  <br />
+  <br />
+  <input type="text" placeholder="Autore" id= "autore"/>
+  <br />
+  <br />
+  <input type="text" placeholder="Posizione" id="posizione"/>
+  <br />
+  <br />
+  <button (click)="inserisciDoc()" id="ins2Button">Inserisci</button>
+  <br />
+  <br />
+  <button (click)="chiudi()" id="chiudiButton">Chiudi</button>
+  <br />
+  <br />
+  <app-notifica *ngIf="notifica== 'true'" [notifica]="notifica"></app-notifica>
+</div>
+
+

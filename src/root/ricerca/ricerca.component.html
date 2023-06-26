@@ -1,0 +1,8 @@
+<br />
+<br />
+<input type="text" id="res" placeholder="Ricerca per nome o titolo"  (keyup)="ricercaLibro()"/>
+<br />
+<app-risultato *ngIf="numeroLibri == 1" [numeroLibri]="numeroLibri" [libroTrovato]="libroTrovato" (removeDocEvent)="ricercaLibro()"></app-risultato>
+<app-risultato-libri *ngIf="numeroLibri > 1" [numeroLibri]="numeroLibri"></app-risultato-libri>
+<app-risultato-nullo *ngIf="numeroLibri == 0" [numeroLibri]="numeroLibri"></app-risultato-nullo>
+<app-risultato-reset *ngIf="numeroLibri == -1" [numeroLibri]="numeroLibri"></app-risultato-reset>
