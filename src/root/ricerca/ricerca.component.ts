@@ -25,6 +25,7 @@ import { RisultatoResetComponent } from './risultato-reset/risultato-reset.compo
 export class RicercaComponent implements OnInit {
   numeroLibri: number;
   archivioFinal: Array<Libro> = [];
+  //oggetto istanziato usando il costruttore di Archivio
   archivioStart: Archivio;
   libroTrovato: Libro;
   valInp:string;
@@ -38,6 +39,7 @@ export class RicercaComponent implements OnInit {
         let input: HTMLInputElement = document.getElementById('res') as HTMLInputElement;
         let y = input.value;
         let archivioStart: Archivio = new Archivio(JSON.parse(x.response));
+        //scandisce aStart e cerca con filter l'el il cui titolo o autore include y. trova tutti gli el che soddisfano il criterio. restituisce array
         this.archivioFinal = archivioStart.archivio.filter((el) =>
           (el.titolo + el.autore).toLowerCase().includes(y)
         );
